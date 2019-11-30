@@ -1,0 +1,25 @@
+echo "# build_make" >> README.md
+git init 
+git add .
+git commit -m "Initial commit"
+git remote add origin ＊＊＊＊
+git push -u origin master
+
+
+★Commit
+git add .
+git commit -m "Message"
+git push -u origin master
+
+★Add tag
+git tag -a tag_name -m "Message"
+git push origin --tags
+
+★Delete tag
+git tag -d tag_name
+git push origin :tag_name
+
+★Repo
+curl https://storage.googleapis.com/git-repo-downloads/repo > bin/repo
+chmod a+x bin/repo
+bin/repo init -u https://github.com/licux/android_manifest -b refs/tags/v1.2

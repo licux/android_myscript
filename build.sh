@@ -5,5 +5,5 @@ echo "make image..."
 echo "make initrd.img..."
 make qcow2_img USE_SQUASHFS=0
 echo "copy images..."
-./copy_image.sh 
+#./copy_image.sh 
 

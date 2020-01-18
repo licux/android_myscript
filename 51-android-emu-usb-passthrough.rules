@@ -1,0 +1,28 @@
+## Bluetooth 
+# Cambridge Silicon Radio, Ltd Bluetooth Dongle (HCI mode)
+SUBSYSTEM=="usb",ENV{DEVTYPE}=="usb_device",ATTRS{idVendor}=="0a12",ATTRS{idProduct}=="0001", TAG+="uaccess"
+# BCM20702A0 Bluetooth 4.0
+SUBSYSTEM=="usb",ENV{DEVTYPE}=="usb_device",ATTRS{idVendor}=="0a5c",ATTRS{idProduct}=="21e8", TAG+="uaccess"
+
+
+## Wifi dongle
+# I-O Data WN-G150UMK Wifi dongle
+SUBSYSTEM=="usb",ENV{DEVTYPE}=="usb_device",ATTRS{idVendor}=="04bb", ATTRS{idProduct}=="094c", TAG+="uaccess"
+# BUFFALO Wifi Dongle
+SUBSYSTEM=="usb",ENV{DEVTYPE}=="usb_device",ATTRS{idVendor}=="0411", ATTRS{idProduct}=="01ee", TAG+="uaccess"
+
+
+## USB memory
+# Microchip MFI chip (Devantech Ltd. USB-ISS)
+SUBSYSTEM=="usb",ENV{DEVTYPE}=="usb_device",ATTRS{idVendor}=="04d8", ATTRS{idProduct}=="ffee", TAG+="uaccess"
+# I-O Data USB Flash Disk
+SUBSYSTEM=="usb",ENV{DEVTYPE}=="usb_device",ATTRS{idVendor}=="04bb", ATTRS{idProduct}=="0ca8", TAG+="uaccess"
+# Fujitsu, Ltd F-04G
+SUBSYSTEM=="usb",ENV{DEVTYPE}=="usb_device",ATTRS{idVendor}=="04c5", ATTRS{idProduct}=="14ce", TAG+="uaccess"
+# C-Media Electronics, Inc. UC MIC
+SUBSYSTEM=="usb",ENV{DEVTYPE}=="usb_device",ATTRS{idVendor}=="0d8c", ATTRS{idProduct}=="0023", TAG+="uaccess"
+# Transcend Information, Inc. JetFlash
+SUBSYSTEM=="usb",ENV{DEVTYPE}=="usb_device",ATTRS{idVendor}=="8564", ATTRS{idProduct}=="1000", TAG+="uaccess"
+# BUFFALO INC.
+SUBSYSTEM=="usb",ENV{DEVTYPE}=="usb_device",ATTRS{idVendor}=="0411", ATTRS{idProduct}=="01dd", TAG+="uaccess"
+

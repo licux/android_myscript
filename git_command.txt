@@ -11,6 +11,10 @@ git add .
 git commit -m "Message"
 git push -u origin master
 
+★Delete commit
+git rebase -i "id"
+git push -f origin master
+
 ★Add tag
 git tag -a tag_name -m "Message"
 git push origin --tags

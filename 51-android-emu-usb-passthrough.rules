@@ -1,3 +1,9 @@
+# sudo cp myscript/51-android-emu-usb-passthrough.rules /lib/udev/rules.d/51-android-emu-usb-passthrough.rules 
+# sudo cp myscript/51-android-emu-usb-passthrough.rules /etc/udev/rules.d/51-android-emu-usb-passthrough.rules 
+# sudo udevadm control --reload-rules
+# sudo udevadm control --reload
+# sudo udevadm trigger
+
 ## Bluetooth 
 # Cambridge Silicon Radio, Ltd Bluetooth Dongle (HCI mode)
 SUBSYSTEM=="usb",ENV{DEVTYPE}=="usb_device",ATTRS{idVendor}=="0a12",ATTRS{idProduct}=="0001", TAG+="uaccess"
@@ -25,4 +31,7 @@ SUBSYSTEM=="usb",ENV{DEVTYPE}=="usb_device",ATTRS{idVendor}=="0d8c", ATTRS{idPro
 SUBSYSTEM=="usb",ENV{DEVTYPE}=="usb_device",ATTRS{idVendor}=="8564", ATTRS{idProduct}=="1000", TAG+="uaccess"
 # BUFFALO INC.
 SUBSYSTEM=="usb",ENV{DEVTYPE}=="usb_device",ATTRS{idVendor}=="0411", ATTRS{idProduct}=="01dd", TAG+="uaccess"
+
+# Logitech, Inc. Webcam C270
+SUBSYSTEM=="usb",ENV{DEVTYPE}=="usb_device",ATTRS{idVendor}=="046d", ATTRS{idProduct}=="0825", TAG+="uaccess"
 
